@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Masala Table - Order and Dining</title>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); overflow-x: hidden;">
+    <header>
+        <nav id="navbar">
+            <div class="mainlogo">
+                <a href="index.html"><img id="logoimage" src="/images/logo.png" alt="Masala Table Logo"></a>
+            </div>
+            <div class="search_container">
+                <input type="text" id="search_input" placeholder="Search dishes...">
+                <button id="search_button">o-</button>
+            </div>
+            <div class="nav_content_box">
+                <div class="nav_content"><a href="index.html">Home</a></div>
+                <div class="nav_content"><a href="contact.html">Contact Us</a></div>
+                <div class="nav_content"><a href="about.html">About Us</a></div>
+                <div class="cart"><a href="cart.html">
+                        <div class="carticon">🛒</div>
+                        <div class="carttext">Cart</div>
+                    </a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1 class="page-title">Your Cart</h1>
+
+        <div class="container">
+
+            <!-- Sample Cart Items -->
+            <div class="card">
+
+                <div class="cart-item">
+                    <img src="https://i.pinimg.com/736x/50/9c/d4/509cd4ca90c727994e5da18bc9f81472.jpg">
+                    <div class="cart-item-details">
+                        <h3>Paneer Tikka Meal</h3>
+                        <p>₹199</p>
+                    </div>
+                    <button class="btn">Remove</button>
+                </div>
+
+                <div class="cart-item">
+                    <img src="https://i.pinimg.com/1200x/66/d2/cd/66d2cd1642ef44ff621fdc4d9a14fa09.jpg">
+                    <div class="cart-item-details">
+                        <h3>Butter Chicken Combo</h3>
+                        <p>₹249</p>
+                    </div>
+                    <button class="btn">Remove</button>
+                </div>
+
+                <div class="cart-total">
+                    Total: ₹448
+                </div>
+
+                <button class="btn" style="margin-top: 20px; width: 100%;">Proceed to Checkout</button>
+
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

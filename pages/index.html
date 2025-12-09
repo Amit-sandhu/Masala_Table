@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Masala Table - Order and Dining</title>
+</head>
+
+<body style="background-color: #f7f8fa; overflow-x: hidden;">
+    <header>
+        <nav id="navbar">
+            <div class="mainlogo">
+                <!-- Placeholder image for simplicity -->
+                <a href="index.html"><img id="logoimage" src="/images/logo.png" alt="Masala Table Logo"></a>
+            </div>
+            <div class="search_container">
+                <input type="text" id="search_input" placeholder="Search dishes..."> 
+                <button id="search_button">o-</button>
+            </div>
+            <div class="nav_content_box">
+                <div class="nav_content"><a href="#">Home</a></div>
+                <div class="nav_content"><a href="contact.html">Contact Us</a></div>
+                <div class="nav_content"><a href="about.html">About Us</a></div>
+                <div class="cart"><a href="cart.html">
+                        <div class="carticon">🛒</div>
+                        <div class="carttext">Cart</div>
+                    </a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- <div class="bg1">
+            <img id="bgimage" src="/images/ready_to_eat.jpg" alt="Ready to Eat Banner">
+        </div> -->
+        <div class="orderbox">
+            <!-- 1. Filter Sidebar -->
+            <div id="order_filter">
+
+                <!-- Filter Section 1: Sort By -->
+                <div class="filter-section">
+                    <div class="filter-title" data-content-id="sort-content">
+                        <span>SORT BY: <span style="color:#cd1c18;">POSITION</span></span>
+                    </div>
+                    <!-- Drop-down Content for Sort By -->
+                    <div id="sort-content" class="filter-content open-content" style="display: block;">
+                        <select class="sort-dropdown">
+                            <option value="position">Position</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Filter Section 2: Price -->
+                <div class="filter-section">
+                    <div class="filter-title" data-content-id="price-content">
+                        PRICE
+                    </div>
+                    <!-- Drop-down Content for Price -->
+                    <div id="price-content" class="filter-content open-content" style="display: block;">
+                        <div class="price-range">
+                            <span id="min-price-display"><input style="width: 85px;" type="number" min="0"> min.</span>
+                            <span id="max-price-display"><input style="width: 85px;" type="number" max="1000"> max.</span>
+                        </div>
+                        <div class="filter-action">
+                            <button>OK</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Section 3: Pack Size -->
+                <div class="filter-section" style="border-bottom: none;">
+                    <div class="filter-title" data-content-id="pack-content">
+                        PACK SIZE
+                    </div>
+                    <!-- Drop-down Content for Pack Size -->
+                    <div id="pack-content" class="filter-content open-content" style="display: block;">
+                        <div class="pack-size-buttons">
+                            <button class="pack-button">100 gm</button>
+                            <button class="pack-button">200 gm</button>
+                            <button class="pack-button">350 gm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Product Grid -->
+            <div id="order_plates_box">
+                <!-- Product Card 1 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/1200x/8d/dc/61/8ddc6110a8a1449fbba7e8bd6fce53e8.jpg"
+                        alt="Dal Makhani Chawal">
+                    <div class="plate-content">
+                        <h3>Dal Makhani Chawal</h3>
+                        <p>(350 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹150</span>
+                            <span class="original-price">₹169</span>
+                        </div>
+                        <div class="discount">11% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/736x/7f/55/b3/7f55b38f35f6760ed94f75f7596de747.jpg"
+                        alt="Choley Chawal">
+                    <div class="plate-content">
+                        <h3>Choley Bhature</h3>
+                        <p>(350 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹150</span>
+                            <span class="original-price">₹169</span>
+                        </div>
+                        <div class="discount">11% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/1200x/22/f8/b7/22f8b73ca126d2d2cfd4672a756a09f4.jpg"
+                        alt="Rajma Chawal">
+                    <div class="plate-content">
+                        <h3>Rajma Chawal</h3>
+                        <p>(350 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹150</span>
+                            <span class="original-price">₹169</span>
+                        </div>
+                        <div class="discount">11% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/736x/5f/d4/32/5fd4328d6e3d5ad1b01b2c5d132d27e7.jpg"
+                        alt="Dal Tadka with Jeera Rice">
+                    <div class="plate-content">
+                        <h3>Paneer Tikka</h3>
+                        <p>(350 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹150</span>
+                            <span class="original-price">₹169</span>
+                        </div>
+                        <div class="discount">11% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/1200x/e7/1b/f0/e71bf0e8349401130e0a49dfa7c44d6d.jpg"
+                        alt="Pindi Chana">
+                    <div class="plate-content">
+                        <h3>Matar Paneer</h3>
+                        <p>(350 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹140</span>
+                            <span class="original-price">₹160</span>
+                        </div>
+                        <div class="discount">12.5% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="order_plates">
+                    <div class="plate-wishlist"><span>&hearts;</span></div>
+                    <img class="plate-image"
+                        src="https://i.pinimg.com/736x/5b/8a/13/5b8a1309dc97630578934b4b2c3589aa.jpg"
+                        alt="Shahi Paneer">
+                    <div class="plate-content">
+                        <h3>Malai Kofta</h3>
+                        <p>(400 g)</p>
+                        <div class="plate-pricing">
+                            <span class="current-price">₹180</span>
+                            <span class="original-price">₹200</span>
+                        </div>
+                        <div class="discount">10% off</div>
+                        <button onclick="location.href='cart.html'" class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                <h2>MASALA TABLE</h2>
+            </div>
+
+            <div class="footer-section">
+                <h4>ABOUT US</h4>
+                <a href="about.html">Who We Are</a>
+                <a href="#">Blog</a>
+                <a href="#">Work With Us</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Report Fraud</a>
+                <a href="#">Press Kit</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>OUR SERVICES</h4>
+                <a href="#">Order Online</a>
+                <a href="#">Catering</a>
+                <a href="#">Bulk Orders</a>
+                <a href="#">Special Events</a>
+                <a href="#">Delivery Partners</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>FOR PARTNERS</h4>
+                <a href="#">Partner With Us</a>
+                <a href="#">Apps For You</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>LEARN MORE</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>SOCIAL LINKS</h4>
+                <div class="social-icons">
+                    <div class="social_icons"><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin " style="font-size: 27px;"></i></a></div>
+                    <div class="social_icons"><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 27px;"></i></a></div>
+                    <div class="social_icons"><a href="https://x,com/" target="_blank"><i class="fa-brands fa-x-twitter" style="font-size: 27px;"></i></a></div>
+                    <div class="social_icons"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 27px;"></i></a></div>
+                    <div class="social_icons"><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook" style="font-size: 27px;" ></i></a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Masala Table&trade;. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
