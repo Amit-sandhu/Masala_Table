@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <title>Masala Table - Contact Us</title>
+</head>
+
+<body style="background-color: rgb(247,248,250); overflow-x: hidden;">
+  <header>
+    <nav id="navbar">
+      <div class="mainlogo">
+        <a href="index.html"><img id="logoimage" src="images/logo.png" alt="Masala Table Logo"></a>
+      </div>
+      <div class="search_container">
+        <input type="text" id="search_input" placeholder="Search dishes...">
+        <button id="search_button">🔍</button>
+      </div>
+      <div class="nav_content_box">
+        <div class="nav_content"><a href="index.html">Home</a></div>
+        <div class="nav_content"><a href="contact.html">Contact Us</a></div>
+        <div class="nav_content"><a href="about.html">About Us</a></div>
+        <div class="cart">
+          <a href="cart.html">
+            <div class="carticon">🛒</div>
+            <div class="carttext">Cart</div>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Contact Us</h1>
+
+    <div class="container contact-grid">
+
+      <!-- Contact Form — validated by script.js initContactPage() -->
+      <div class="card" style="padding: 28px;">
+        <h2 style="margin-bottom: 16px; color: #cd1c18;">Send Us a Message</h2>
+
+        <form id="contact-form" novalidate>
+          <label>Name <span style="color:#cd1c18;">*</span></label>
+          <input type="text" placeholder="Enter your full name" autocomplete="name">
+
+          <label>Email <span style="color:#cd1c18;">*</span></label>
+          <input type="email" placeholder="Enter your email address" autocomplete="email">
+
+          <label>Message <span style="color:#cd1c18;">*</span></label>
+          <textarea rows="5" placeholder="Write your message (min. 10 characters)..."></textarea>
+
+          <button class="btn" type="submit" style="width:100%;margin-top:6px;font-size:17px;padding:12px;">
+            Submit Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="card" style="padding: 28px;">
+        <h2 style="margin-bottom: 16px; color: #cd1c18;">Reach Us</h2>
+        <p style="margin-bottom:10px;"><b>📍 Address:</b> Chandigarh, India</p>
+        <p style="margin-bottom:10px;"><b>📞 Phone:</b> +91 98765-43219</p>
+        <p style="margin-bottom:20px;"><b>📧 Email:</b> support@masalatable.com</p>
+        <h3 style="margin-bottom: 10px; font-size:16px;">Follow Us</h3>
+        <p style="color:#555;">
+          <a href="https://instagram.com" target="_blank" style="color:#cd1c18;margin-right:10px;">Instagram</a>
+          <a href="https://facebook.com" target="_blank" style="color:#cd1c18;margin-right:10px;">Facebook</a>
+          <a href="https://youtube.com" target="_blank" style="color:#cd1c18;">YouTube</a>
+        </p>
+        <div style="margin-top:24px; padding:16px; background:#fff7f1; border-radius:8px; border-left:4px solid #ffae00;">
+          <p style="font-size:13px;color:#777;"><b>Opening Hours:</b><br>
+          Mon–Sat: 10:00 AM – 10:00 PM<br>
+          Sunday: 11:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
